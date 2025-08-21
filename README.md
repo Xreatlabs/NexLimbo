@@ -96,3 +96,7 @@ To build a minimized jar, go to the project root directory and run in the termin
 ### Contacts
 
 If you have any questions or suggestions, join our [Discord server](https://discord.gg/yAgRafG6JD)!
+
+### Credits
+Nan1t - for building original.
+
