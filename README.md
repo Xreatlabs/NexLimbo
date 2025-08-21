@@ -1,4 +1,4 @@
-## NanoLimbo
+## NexLimbo
 
 This is a lightweight Minecraft limbo server, written in Java with Netty.
 The main goal of this project is maximum simplicity with a minimum number of sent and processed packets.
@@ -10,9 +10,9 @@ The server is fully clear. It is only able to keep a lot of players while the ma
 General features:
 * High performance. The server doesn't save or cache any useless (for limbo) data.
 * Doesn't spawn threads per player. Use a fixed thread pool.
-* Support for **BungeeCord** and **Velocity** info forwarding.
+* Support for **BungeeCord** and **Velocity** info forwarding (compatible with all versions).
 * Support for [BungeeGuard](https://www.spigotmc.org/resources/79601/) handshake format.
-* Multiple versions support.
+* Multiple versions support (1.8.X-1.21.X).
 * Fully configurable.
 * Lightweight. App size around **3MB**.
 
@@ -22,7 +22,6 @@ General features:
 
 Symbol `X` means all minor versions.
 
-- [x] 1.7.X
 - [x] 1.8.X
 - [x] 1.9.X
 - [x] 1.10.X
@@ -36,7 +35,7 @@ Symbol `X` means all minor versions.
 - [x] 1.18.X
 - [x] 1.19.X
 - [x] 1.20.X
-- [x] 1.21
+- [x] 1.21.X
 
 The server **doesn't** support snapshots.
 
@@ -55,10 +54,10 @@ Required software: JRE 11+
 
 The installation process is simple.
 
-1. Download the latest version of the program [**here**](https://github.com/Nan1t/NanoLimbo/releases).
+1. Download the latest version of the program.
 2. Put the jar file in the folder you want.
 3. Create a start script as you did for Bukkit or BungeeCord, with a command like this:
-   `java -jar NanoLimbo-<version>.jar`
+   `java -jar NexLimbo-<version>.jar`
 4. The server will create `settings.yml` file, which is the server configuration. 
 5. Configure it as you want and restart the server.
 
@@ -96,4 +95,4 @@ To build a minimized jar, go to the project root directory and run in the termin
 
 ### Contacts
 
-If you have any questions or suggestions, join our [Discord server](https://discord.gg/4VGP3Gv)!
+If you have any questions or suggestions, join our [Discord server](https://discord.gg/yAgRafG6JD)!
