@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'ua.xreatlabs'
-version '1.8.1'
+version '1.0.0'
 
 compileJava {
     options.encoding = "UTF-8"
