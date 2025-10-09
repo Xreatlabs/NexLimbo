@@ -1,4 +1,4 @@
-group 'com.bivashy.limbo'
+group 'com.xreatlabs.limbo'
 
 repositories {
     mavenCentral()
