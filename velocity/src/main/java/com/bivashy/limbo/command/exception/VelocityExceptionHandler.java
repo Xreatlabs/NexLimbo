@@ -1,6 +1,6 @@
 package com.bivashy.limbo.command.exception;
 
-import com.bivashy.limbo.NanoLimboVelocity;
+import com.bivashy.limbo.NexLimboVelocity;
 
 import revxrsal.commands.command.CommandActor;
 import revxrsal.commands.exception.MissingArgumentException;
@@ -9,9 +9,9 @@ import revxrsal.commands.velocity.VelocityCommandActor;
 import revxrsal.commands.velocity.exception.VelocityExceptionAdapter;
 
 public class VelocityExceptionHandler extends VelocityExceptionAdapter {
-    private final NanoLimboVelocity plugin;
+    private final NexLimboVelocity plugin;
 
-    public VelocityExceptionHandler(NanoLimboVelocity plugin) {
+    public VelocityExceptionHandler(NexLimboVelocity plugin) {
         this.plugin = plugin;
     }
 

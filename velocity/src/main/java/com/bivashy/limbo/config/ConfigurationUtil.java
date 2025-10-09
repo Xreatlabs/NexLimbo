@@ -5,13 +5,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 
-import com.bivashy.limbo.NanoLimboVelocity;
+import com.bivashy.limbo.NexLimboVelocity;
 
 public class ConfigurationUtil {
     private ConfigurationUtil() {
     }
 
-    public static File saveDefaultConfig(NanoLimboVelocity plugin, String configurationName) {
+    public static File saveDefaultConfig(NexLimboVelocity plugin, String configurationName) {
         return saveDefaultConfig(plugin.getClass().getClassLoader(), plugin.getDataFolder().toFile(), configurationName);
     }
 

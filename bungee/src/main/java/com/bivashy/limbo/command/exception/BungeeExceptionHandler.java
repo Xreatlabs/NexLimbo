@@ -1,6 +1,6 @@
 package com.bivashy.limbo.command.exception;
 
-import com.bivashy.limbo.NanoLimboBungee;
+import com.bivashy.limbo.NexLimboBungee;
 
 import revxrsal.commands.bungee.exception.BungeeExceptionAdapter;
 import revxrsal.commands.command.CommandActor;
@@ -8,9 +8,9 @@ import revxrsal.commands.exception.MissingArgumentException;
 import revxrsal.commands.exception.NoPermissionException;
 
 public class BungeeExceptionHandler extends BungeeExceptionAdapter {
-    private final NanoLimboBungee plugin;
+    private final NexLimboBungee plugin;
 
-    public BungeeExceptionHandler(NanoLimboBungee plugin) {
+    public BungeeExceptionHandler(NexLimboBungee plugin) {
         this.plugin = plugin;
     }
 

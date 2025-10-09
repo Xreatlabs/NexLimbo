@@ -6,7 +6,7 @@ plugins {
 
 allprojects {
     group 'ua.nanit'
-    version '1.0.15'
+    version '1.0.0'
 }
 
 subprojects {
@@ -18,8 +18,8 @@ subprojects {
     }
 
     tasks.withType(JavaCompile).configureEach {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     repositories {

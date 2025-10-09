@@ -24,7 +24,7 @@ import ua.nanit.limbo.server.ConsoleCommandHandler;
 import ua.nanit.limbo.server.LimboServer;
 import ua.nanit.limbo.server.Log;
 
-public final class NanoLimbo {
+public final class NexLimbo {
 
     public static void main(String[] args) {
         try {
@@ -33,7 +33,7 @@ public final class NanoLimbo {
             LimboServer server = new LimboServer(new YamlLimboConfig(Paths.get("./"), classLoader).load(), consoleCommandHandler, classLoader);
             consoleCommandHandler.registerAll(server).start();
             server.start();
-            Runtime.getRuntime().addShutdownHook(new Thread(server::stop, "NanoLimbo shutdown thread"));
+            Runtime.getRuntime().addShutdownHook(new Thread(server::stop, "NexLimbo shutdown thread"));
         } catch(Exception e) {
             Log.error("Cannot start server: ", e);
         }

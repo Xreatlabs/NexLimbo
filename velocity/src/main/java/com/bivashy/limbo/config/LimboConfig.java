@@ -11,7 +11,7 @@ import org.spongepowered.configurate.serialize.SerializationException;
 import org.spongepowered.configurate.serialize.TypeSerializerCollection;
 import org.spongepowered.configurate.yaml.YamlConfigurationLoader;
 
-import com.bivashy.limbo.NanoLimboVelocity;
+import com.bivashy.limbo.NexLimboVelocity;
 import com.bivashy.limbo.config.model.VelocityLimboServer;
 import com.bivashy.limbo.config.model.VelocityLimboServer.VelocityLimboServerSerializer;
 
@@ -23,7 +23,7 @@ public class LimboConfig {
     private MessageConfiguration messages;
     private ConfigurationNode root;
 
-    public LimboConfig(NanoLimboVelocity plugin) {
+    public LimboConfig(NexLimboVelocity plugin) {
         try {
             root = YamlConfigurationLoader.builder()
                     .defaultOptions(ConfigurationOptions.defaults()

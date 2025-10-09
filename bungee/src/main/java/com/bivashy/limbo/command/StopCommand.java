@@ -1,7 +1,7 @@
 package com.bivashy.limbo.command;
 
 
-import com.bivashy.limbo.NanoLimboBungee;
+import com.bivashy.limbo.NexLimboBungee;
 
 import revxrsal.commands.annotation.Command;
 import revxrsal.commands.annotation.Default;
@@ -14,7 +14,7 @@ import ua.nanit.limbo.server.LimboServer;
 @Command("limbostop")
 public class StopCommand {
     @Dependency
-    private NanoLimboBungee plugin;
+    private NexLimboBungee plugin;
 
     @Default
     @CommandPermission("limbo.stop")

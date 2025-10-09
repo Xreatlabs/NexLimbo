@@ -11,17 +11,17 @@ import com.bivashy.limbo.config.model.BungeeLimboServer;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.config.ServerInfo;
 import net.md_5.bungee.api.plugin.Plugin;
-import ua.nanit.limbo.NanoLimbo;
+import ua.nanit.limbo.NexLimbo;
 import ua.nanit.limbo.server.Command;
 import ua.nanit.limbo.server.CommandHandler;
 import ua.nanit.limbo.server.LimboServer;
 
-public class NanoLimboBungee extends Plugin {
+public class NexLimboBungee extends Plugin {
     static {
-        NanoLimbo.class.getName(); // For preventing minimizing this class
+        NexLimbo.class.getName(); // For preventing minimizing this class
     }
 
-    private static NanoLimboBungee instance;
+    private static NexLimboBungee instance;
     private final Map<String, LimboServer> servers = new HashMap<>();
     private LimboConfig limboConfig;
 
@@ -60,7 +60,7 @@ public class NanoLimboBungee extends Plugin {
         return limboConfig;
     }
 
-    public static NanoLimboBungee getInstance() {
+    public static NexLimboBungee getInstance() {
         return instance;
     }
 }

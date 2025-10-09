@@ -16,25 +16,25 @@ import com.velocitypowered.api.plugin.annotation.DataDirectory;
 import com.velocitypowered.api.proxy.ProxyServer;
 import com.velocitypowered.api.proxy.server.ServerInfo;
 
-import ua.nanit.limbo.NanoLimbo;
+import ua.nanit.limbo.NexLimbo;
 import ua.nanit.limbo.server.Command;
 import ua.nanit.limbo.server.CommandHandler;
 import ua.nanit.limbo.server.LimboServer;
 
-@Plugin(id = "nanolimbovelocity", name = "NanoLimboVelocity", version = "1.0.15", authors = "bivashy, Nan1t")
-public class NanoLimboVelocity {
+@Plugin(id = "nexlimbovelocity", name = "NexLimboVelocity", version = "1.0.0", authors = "bivashy, Nan1t")
+public class NexLimboVelocity {
     static {
-        NanoLimbo.class.getName(); // For preventing shadow jar minimizing
+        NexLimbo.class.getName(); // For preventing shadow jar minimizing
     }
 
-    private static NanoLimboVelocity instance;
+    private static NexLimboVelocity instance;
     private final Map<String, LimboServer> servers = new HashMap<>();
     private final ProxyServer server;
     private final Path dataFolder;
     private final LimboConfig limboConfig;
 
     @Inject
-    public NanoLimboVelocity(ProxyServer server, @DataDirectory Path dataFolder) {
+    public NexLimboVelocity(ProxyServer server, @DataDirectory Path dataFolder) {
         instance = this;
         this.server = server;
         this.dataFolder = dataFolder;
@@ -76,7 +76,7 @@ public class NanoLimboVelocity {
         return servers;
     }
 
-    public static NanoLimboVelocity getInstance() {
+    public static NexLimboVelocity getInstance() {
         return instance;
     }
 }

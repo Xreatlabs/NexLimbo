@@ -3,7 +3,7 @@ package com.bivashy.limbo.command;
 import java.util.Collection;
 import java.util.Collections;
 
-import com.bivashy.limbo.NanoLimboVelocity;
+import com.bivashy.limbo.NexLimboVelocity;
 import com.bivashy.limbo.command.exception.SendComponentException;
 import com.bivashy.limbo.command.exception.VelocityExceptionHandler;
 
@@ -13,10 +13,10 @@ import ua.nanit.limbo.server.Command;
 import ua.nanit.limbo.server.LimboServer;
 
 public class LampVelocityCommandHandler implements ua.nanit.limbo.server.CommandHandler<Command> {
-    private final NanoLimboVelocity plugin;
+    private final NexLimboVelocity plugin;
     private final CommandHandler commandHandler;
 
-    public LampVelocityCommandHandler(NanoLimboVelocity plugin) {
+    public LampVelocityCommandHandler(NexLimboVelocity plugin) {
         this.plugin = plugin;
         commandHandler = new VelocityHandler(plugin, plugin.getServer()).disableStackTraceSanitizing()
                 .setExceptionHandler(new VelocityExceptionHandler(plugin));
@@ -30,7 +30,7 @@ public class LampVelocityCommandHandler implements ua.nanit.limbo.server.Command
             return limboServer;
         });
         commandHandler.registerExceptionHandler(SendComponentException.class, (actor, e) -> e.send(actor));
-        commandHandler.registerDependency(NanoLimboVelocity.class, plugin);
+        commandHandler.registerDependency(NexLimboVelocity.class, plugin);
         commandHandler.register(new ConnectionCountCommand(), new HelpCommand(), new MemoryCommand(), new StopCommand(), new StartCommand());
         return this;
     }

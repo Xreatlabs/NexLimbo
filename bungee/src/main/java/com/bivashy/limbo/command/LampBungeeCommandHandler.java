@@ -3,7 +3,7 @@ package com.bivashy.limbo.command;
 import java.util.Collection;
 import java.util.Collections;
 
-import com.bivashy.limbo.NanoLimboBungee;
+import com.bivashy.limbo.NexLimboBungee;
 import com.bivashy.limbo.command.exception.BungeeExceptionHandler;
 
 import revxrsal.commands.CommandHandler;
@@ -13,10 +13,10 @@ import ua.nanit.limbo.server.Command;
 import ua.nanit.limbo.server.LimboServer;
 
 public class LampBungeeCommandHandler implements ua.nanit.limbo.server.CommandHandler<Command> {
-    private final NanoLimboBungee plugin;
+    private final NexLimboBungee plugin;
     private final CommandHandler commandHandler;
 
-    public LampBungeeCommandHandler(NanoLimboBungee plugin) {
+    public LampBungeeCommandHandler(NexLimboBungee plugin) {
         this.plugin = plugin;
         commandHandler = new BungeeHandler(plugin).disableStackTraceSanitizing().setExceptionHandler(new BungeeExceptionHandler(plugin));
     }

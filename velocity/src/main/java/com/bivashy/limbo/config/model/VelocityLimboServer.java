@@ -8,7 +8,7 @@ import org.spongepowered.configurate.ConfigurationNode;
 import org.spongepowered.configurate.serialize.SerializationException;
 import org.spongepowered.configurate.serialize.TypeSerializer;
 
-import com.bivashy.limbo.NanoLimboVelocity;
+import com.bivashy.limbo.NexLimboVelocity;
 import com.bivashy.limbo.config.ConfigurationUtil;
 
 import ua.nanit.limbo.configuration.LimboConfig;
@@ -44,7 +44,7 @@ public class VelocityLimboServer {
     }
 
     public static class VelocityLimboServerSerializer implements TypeSerializer<VelocityLimboServer> {
-        private static final NanoLimboVelocity PLUGIN = NanoLimboVelocity.getInstance();
+        private static final NexLimboVelocity PLUGIN = NexLimboVelocity.getInstance();
 
         @Override
         public VelocityLimboServer deserialize(Type type, ConfigurationNode node) throws SerializationException {

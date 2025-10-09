@@ -1,6 +1,6 @@
 package com.bivashy.limbo.command;
 
-import com.bivashy.limbo.NanoLimboVelocity;
+import com.bivashy.limbo.NexLimboVelocity;
 import com.bivashy.limbo.command.exception.SendComponentException;
 
 import revxrsal.commands.annotation.Command;
@@ -11,7 +11,7 @@ import revxrsal.commands.command.CommandActor;
 @Command("limbohelp")
 public class HelpCommand {
     @Dependency
-    private NanoLimboVelocity plugin;
+    private NexLimboVelocity plugin;
 
     @Default
     public void execute(CommandActor actor) {

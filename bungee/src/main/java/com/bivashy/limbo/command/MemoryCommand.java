@@ -1,6 +1,6 @@
 package com.bivashy.limbo.command;
 
-import com.bivashy.limbo.NanoLimboBungee;
+import com.bivashy.limbo.NexLimboBungee;
 
 import revxrsal.commands.annotation.Command;
 import revxrsal.commands.annotation.Default;
@@ -12,7 +12,7 @@ import revxrsal.commands.exception.SendMessageException;
 @Command({"mem", "memory"})
 public class MemoryCommand {
     @Dependency
-    private NanoLimboBungee plugin;
+    private NexLimboBungee plugin;
 
     @Default
     @CommandPermission("limbo.memory")

@@ -1,6 +1,6 @@
 package com.bivashy.limbo.command;
 
-import com.bivashy.limbo.NanoLimboBungee;
+import com.bivashy.limbo.NexLimboBungee;
 
 import revxrsal.commands.annotation.Command;
 import revxrsal.commands.annotation.Default;
@@ -11,7 +11,7 @@ import revxrsal.commands.exception.SendMessageException;
 @Command("limbohelp")
 public class HelpCommand {
     @Dependency
-    private NanoLimboBungee plugin;
+    private NexLimboBungee plugin;
 
     @Default
     public void execute(CommandActor actor) {

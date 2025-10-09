@@ -1,4 +1,4 @@
-rootProject.name = 'NanoLimbo'
+rootProject.name = 'NexLimbo'
 
 include 'api'
 include 'bungee'

@@ -1,6 +1,6 @@
 package com.bivashy.limbo.command;
 
-import com.bivashy.limbo.NanoLimboVelocity;
+import com.bivashy.limbo.NexLimboVelocity;
 import com.bivashy.limbo.command.exception.SendComponentException;
 
 import revxrsal.commands.annotation.Command;
@@ -13,7 +13,7 @@ import ua.nanit.limbo.server.LimboServer;
 @Command("limboconn")
 public class ConnectionCountCommand {
     @Dependency
-    private NanoLimboVelocity plugin;
+    private NexLimboVelocity plugin;
 
     @Default
     @CommandPermission("limbo.connection")
