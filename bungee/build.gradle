@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation project(':api')
+    implementation project(':NexLimbo:api')
     implementation 'com.github.Revxrsal.Lamp:common:3.0.8'
     implementation 'com.github.Revxrsal.Lamp:bungee:3.0.8'
     compileOnly 'org.spongepowered:configurate-yaml:4.1.2'
